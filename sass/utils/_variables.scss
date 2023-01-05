@@ -1,0 +1,14 @@
+// Палитра цветов макета и наборы шрифтов вынесены в переменные в файле variables.scss,
+// который лежит в папке sass/utils. Можно использовать CSS или SASS переменные (по желанию).
+$accent-color: #2196f3;
+$first-color: #212121;
+$white-color: #ffffff;
+$black-color: #000000;
+$gray-color: #757575;
+$bkgr-color-footer: #2f303a;
+$border-color: #eeeeee;
+$margin-standart: 30px;
+$gap-picters: 30px;
+$background-color: #f5f4fa;
+$icon-color: #afb1b8;
+$background-overlay-color: rgba(33, 150, 243, 0.9);

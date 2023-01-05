@@ -1,0 +1,60 @@
+.footer {
+  background: $bkgr-color-footer;
+  padding: 60px 0;
+}
+
+.footer__container {
+  display: block;
+  text-align: center;
+
+  @include tablet {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    // justify-content: center;
+    justify-content: space-around;
+  }
+  @include desktop {
+    flex-wrap: nowrap;
+    text-align: start;
+  }
+}
+
+.footer__flex {
+  text-align: center;
+  margin-bottom: 60px;
+
+  @include tablet {
+    flex-direction: column;
+    display: flex;
+  }
+
+  @include desktop {
+    display: block;
+    margin-bottom: 0;
+    margin-right: 0;
+    width: 231px;
+    text-align: start;
+  }
+}
+
+.footer__adress {
+  margin-top: 20px;
+}
+
+.footer__item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.footer__addres {
+  font-style: normal;
+  line-height: 1.71;
+  color: $white-color;
+  text-decoration: none;
+}
+
+.footer__mail-tel {
+  font-style: normal;
+  @include font(null, null, 1.71, null);
+  color: rgba(255, 255, 255, 0.6);
+}

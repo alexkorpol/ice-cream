@@ -1,0 +1,59 @@
+.footer {
+  background: $bkgr-color-footer;
+  padding: 60px 0;
+}
+
+.footer__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.footer__mobile-tablet {
+  margin: 0 auto;
+  @media (min-width: 768px) {
+    display: flex;
+    align-items: baseline;
+  }
+  @media (min-width: 768px) and (max-width: 1199px) {
+    justify-content: space-around;
+    margin-bottom: 60px;
+  }
+  @media (max-width: 767px) {
+    margin-bottom: 60px;
+  }
+}
+
+.footer__flex {
+  @media (max-width: 1199px) {
+    margin-bottom: 60px;
+    text-align: center;
+  }
+  // @media (min-width: 768px) and (max-width: 1199px) {
+  //   padding-left: 60px;
+  // }
+
+  /* display: flex; */
+  min-width: 231px;
+}
+
+.footer__adress {
+  margin-top: 20px;
+}
+
+.footer__item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.footer__addres {
+  font-style: normal;
+  line-height: 1.71;
+  color: $white-color;
+  text-decoration: none;
+}
+
+.footer__mail-tel {
+  font-style: normal;
+  @include font(null, null, 1.71, null);
+  color: rgba(255, 255, 255, 0.6);
+}
