@@ -1,9 +1,13 @@
 .container {
   width: 100%;
-  padding: 0px 15px;
+  padding: 0px 16px;
   margin: 0 auto;
 
-  @include mobile {
+  @include mobile-320 {
+    width: 320px;
+  }
+
+  @include mobile-480 {
     width: 480px;
   }
   @include tablet {

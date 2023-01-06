@@ -1,11 +1,17 @@
-@mixin font($fw, $fs, $lh, $ls){
-    font-weight: $fw;
-    font-size: $fs+px;
-    line-height: $lh;
-    letter-spacing: $ls+em;
+@mixin font($fw, $fs, $lh, $ls) {
+  font-weight: $fw;
+  font-size: $fs + px;
+  line-height: $lh;
+  letter-spacing: $ls + em;
 }
 
-@mixin mobile {
+@mixin mobile-320 {
+  @media screen and (min-width: 320px) {
+    @content;
+  }
+}
+
+@mixin mobile-480 {
   @media screen and (min-width: 480px) {
     @content;
   }
@@ -24,7 +30,10 @@
 }
 
 @mixin retina {
-  @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
     @content;
   }
 }

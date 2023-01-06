@@ -1,28 +1,28 @@
 body {
-  font-family: 'Roboto', sans-serif;
-  color: $gray-color;
-  font-size: 14px;
-  background-color: $white-color;
-  letter-spacing: 0.03em;
+  font-family: 'Montserrat', sans-serif;
+  color: #000000;
+  // font-size: 14px;
+  // background-color: $white-color;
+  // letter-spacing: 0.03em;
 }
 
 .section {
-  padding: 60px 0;
-  @include desktop {
-    padding: 94px 0;
-  }
+  // padding: 60px 0;
+  // @include desktop {
+  //   padding: 94px 0;
+  // }
 }
 
 .section-title {
-  text-align: center;
-  color: $first-color;
-  @include font(null, 28, 1.18, null);
-  margin-bottom: 30px;
+  // text-align: center;
+  // color: $first-color;
+  // @include font(null, 28, 1.18, null);
+  // margin-bottom: 30px;
 
-  @include desktop {
-    @include font(null, 36, 1.16, null);
-    margin-bottom: 50px;
-  }
+  // @include desktop {
+  //   @include font(null, 36, 1.16, null);
+  //   margin-bottom: 50px;
+  // }
 }
 
 button {
@@ -41,14 +41,15 @@ img {
 
 .link {
   text-decoration: none;
+  // color: #000000;
 }
 
-.link:hover,
-.link:focus {
-  color: $accent-color;
-}
+// .link:hover,
+// .link:focus {
+//   color: $accent-text-button-color;
+// }
 
 :focus {
-  outline: 1px solid $accent-color;
-  border-radius: 4px;
+  // outline: 1px solid $accent-color;
+  // border-radius: 4px;
 }
