@@ -1,57 +1,192 @@
 .hero {
   display: block;
   max-width: 100%;
+  max-height: 70%;
   height: auto;
   background-size: cover;
+  background-image: url(../images/background-desktop.jpg);
+  // height: calc(1330px-60px);
+  height: 1270px;
+  background-position: 60px;
+}
 
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url(../images/img-background-mob.jpg);
-  // max-width: 480px;
-  // margin: 0 auto;
-  background-size: cover;
-  padding: 118px 0;
+.hero__title-block {
+  padding-bottom: 120px;
+}
+
+.hero__pretitle {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 30px;
+  line-height: 37px;
   text-align: center;
-  background-position: center;
-
-  @include retina {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url(../images/img-background-mob-2x.jpg);
-  }
-
-  @include tablet {
-    // max-width: 768px;
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url(../images/img-background-tab.jpg);
-    @include retina {
-      background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url(../images/img-background-tab-2x.jpg);
-    }
-  }
-
-  @include desktop {
-    // max-width: 1600px;
-    padding: 200px 0;
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url(../images/img-background.jpg);
-
-    @include retina {
-      background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url(../images/img-background-2x.jpg);
-    }
-  }
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #131313;
 }
 
 .hero__title {
+  font-family: 'Seymour One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 1.25;
   text-align: center;
+  letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: $white-color;
-  margin-bottom: 30px;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 360px;
-  @include font(900, 26, 1.61, 0.06);
-  @include desktop {
-    @include font(900, 44, 1.36, 0.06);
-    max-width: 696px;
-  }
+  color: #131313;
 }
+
+.hero__list {
+  display: flex;
+  gap: 29px;
+  justify-content: center;
+}
+#ice-cream-circle{
+  background: linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7)), #d9d9d9;
+  box-shadow: 0px 8px 30px rgba(10, 136, 23, 0.25);
+}
+#ice-cream-rectangle {
+  background-color: #aec6a5;
+}
+#ice-coffee-circle{
+  background: linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7)), #D9D9D9;
+box-shadow: 0px 8px 30px rgba(153, 114, 23, 0.25);
+}
+#ice-coffee-rectangle {
+  background-color: #EFD478;
+}
+#milkshakes-circle{
+  background: linear-gradient(0deg, rgba(213, 117, 63, 0.7), rgba(213, 117, 63, 0.7)), #D9D9D9;
+box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.25);
+}
+#milkshakes-rectangle {
+  background-color: #D6936D;
+}
+
+.hero__block-background {
+  width: 370px;
+  height: 703px;
+  position: relative;
+  // background-color: grey;
+  position: relative;
+  z-index: 0;
+}
+
+.hero__block-circle-photo{
+  position: absolute;
+  margin-left: 34px;
+  margin-top: -16px;
+  border-radius: 50%;  
+  z-index: 2;
+
+}
+
+.hero__block-rectangle {
+  width: 370px;
+  height: 536px;
+  box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+  border-radius: 24px;
+  position: absolute;
+  bottom: 0;
+  z-index: 0;
+}
+
+.hero__block-circle {
+  width: 302px;
+  height: 302px;
+  margin-left: 34px;
+  border-radius: 50%;  
+  position: absolute;
+  z-index: 1;
+}
+
+.hero__item-title {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 1.23;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: $text-color-hero;
+  padding-top: 165px;
+}
+
+.hero__item-description {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.76;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: $text-color-hero;
+  padding-top: 66px;
+  padding-bottom: 50px;
+  margin: 0 auto;
+  max-width: 242px;
+
+}
+.hero__arrow{
+  display: block;
+  width: 40px;
+  height: 16px;
+  margin: 0 auto;
+}
+
+// .portfolio__list>li:nth-child(-n+3)
+
+//   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+//   url(../images/img-background-mob.jpg);
+// // max-width: 480px;
+// // margin: 0 auto;
+// background-size: cover;
+// padding: 118px 0;
+// text-align: center;
+// background-position: center;
+
+// @include retina {
+//   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+//     url(../images/img-background-mob-2x.jpg);
+// }
+
+// @include tablet {
+//   // max-width: 768px;
+//   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+//     url(../images/img-background-tab.jpg);
+//   @include retina {
+//     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+//       url(../images/img-background-tab-2x.jpg);
+//   }
+// }
+
+//   @include desktop {
+//     // max-width: 1600px;
+//     padding: 200px 0;
+//     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+//       url(../images/img-background.jpg);
+
+//     @include retina {
+//       background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+//         url(../images/img-background-2x.jpg);
+//     }
+//   }
+// }
+
+// .hero__title {
+//   text-align: center;
+//   text-transform: uppercase;
+//   color: $white-color;
+//   margin-bottom: 30px;
+//   margin-left: auto;
+//   margin-right: auto;
+//   max-width: 360px;
+//   @include font(900, 26, 1.61, 0.06);
+//   @include desktop {
+//     @include font(900, 44, 1.36, 0.06);
+//     max-width: 696px;
+//   }
+// }
