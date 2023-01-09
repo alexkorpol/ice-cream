@@ -221,8 +221,9 @@ img {
   font-weight: 600;
   font-size: 14px;
   line-height: 1.21;
+  display: inline-flex;
   align-items: center;
-  text-align: center;
+  justify-content: center;
   color: #000000;
 }
 .header__button:hover, .header__button:focus {
@@ -235,7 +236,11 @@ img {
   background-color: #ababab;
 }
 
-.header__button.header__arrow:focus {
+.header__arrow {
+  fill: #000000;
+}
+
+.header__button:focus .header__arrow {
   fill: #ffffff;
 }
 
@@ -246,6 +251,9 @@ img {
 }
 
 .hero__motto {
+  width: 367px;
+  height: 144px;
+  margin-top: 45px;
   font-family: "Seymour One";
   font-style: normal;
   font-weight: 400;
@@ -254,9 +262,72 @@ img {
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: #fcfcfc;
-  width: 367px;
-  height: 144px;
-  margin-top: 45px;
+}
+
+.hero__product-list {
+  display: flex;
+  gap: 12px;
+}
+
+.hero__product_button {
+  margin-top: 28px;
+  width: 134px;
+  height: 42px;
+  background-color: #84a178;
+  border-radius: 10px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.21;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #000000;
+  border: 2px solid #f8d24e;
+}
+.hero__product_button:hover, .hero__product_button:focus {
+  border: 2px solid #0a8817;
+}
+.hero__product_button:focus {
+  color: #ffffff;
+}
+
+.hero__product-question {
+  width: 154px;
+  height: 40px;
+  margin-top: 28px;
+  background-color: #84a178;
+  border: none;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.25;
+  align-items: center;
+  text-align: center;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  color: #f8d24e;
+}
+.hero__product-question:hover {
+  color: #0a8817;
+}
+.hero__product-question:focus {
+  color: #ffffff;
+}
+
+.hero__text {
+  width: 200px;
+  height: 120px;
+  margin-top: 111px;
+  margin-left: 16px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4;
+  color: #fcfcfc;
 }
 
 .hero {

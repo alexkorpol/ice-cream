@@ -6,8 +6,7 @@
   display: flex;
   justify-content: end;
 }
-.header__list {
-}
+
 .header__page {
   display: flex;
 }
@@ -54,8 +53,9 @@
   font-weight: 600;
   font-size: 14px;
   line-height: 1.21;
+  display: inline-flex;
   align-items: center;
-  text-align: center;
+  justify-content: center;
   color: #000000;
   &:hover,
   &:focus {
@@ -68,7 +68,11 @@
     background-color: $disable-text-button-color;
   }
 }
-.header__button.header__arrow:focus {
+.header__arrow {
+  fill: $text-color;
+}
+
+.header__button:focus .header__arrow {
   fill: $white-color;
 }
 
@@ -78,6 +82,9 @@
   margin-left: 7.75px;
 }
 .hero__motto {
+  width: 367px;
+  height: 144px;
+  margin-top: 45px;
   font-family: 'Seymour One';
   font-style: normal;
   font-weight: 400;
@@ -86,10 +93,71 @@
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: #fcfcfc;
-  width: 367px;
-  height: 144px;
-  margin-top: 45px;
 }
+
+.hero__product-list {
+  display: flex;
+  gap: 12px;
+}
+.hero__product_button {
+  margin-top: 28px;
+  width: 134px;
+  height: 42px;
+  background-color: $background-color;
+  border-radius: 10px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.21;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #000000;
+  border: 2px solid $text-button-color;
+  &:hover,
+  &:focus {
+    border: 2px solid $accent-text-button-color;
+  }
+  &:focus {
+    color: $white-color;
+  }
+}
+.hero__product-question {
+  width: 154px;
+  height: 40px;
+  margin-top: 28px;
+  background-color: $background-color;
+  border: none;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.25;
+  align-items: center;
+  text-align: center;
+  text-decoration-line: underline;
+  color: $text-button-color;
+  &:hover {
+    color: $accent-text-button-color;
+  }
+  &:focus {
+    color: $white-color;
+  }
+}
+.hero__text {
+  width: 200px;
+  height: 120px;
+  margin-top: 111px;
+  margin-left: 16px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4;
+  color: $second-text-color;
+}
+//
 
 // .nav {
 //   align-items: center;

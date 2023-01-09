@@ -1,202 +1,209 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Seymour+One&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Document</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
-    integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" /> 
-  <link rel="stylesheet" href="./css/main.min.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Seymour+One&display=swap"
-    rel="stylesheet" />
-</head>
+  <body>
+    <header class="header">
+      <div class="header__page container">
+        <svg class="header__logo">
+          <use href="./images/icons.svg#icon-logo"></use>
+        </svg>
+        <nav class="header__nav">
+          <ul class="header__list list">
+            <li class="header__item">
+              <a class="header__link link" href="./index.html">Home</a>
+            </li>
+            <li class="header__item link">
+              <a class="header__link link" href="./index.html">How it’s made?</a>
+            </li>
+            <li class="header__item link">
+              <a class="header__link link" href="./index.html">Our products</a>
+            </li>
+            <li class="header__item link">
+              <a class="header__link link" href="./index.html">Contact</a>
+            </li>
+          </ul>
+          <button data-modal-open class="header__button" type="button">
+            Buy now
+            <svg class="header__arrow">
+              <use href="./images/icons.svg#icon-arrow-menu"></use>
+            </svg>
+          </button>
+        </nav>
+      </div>
 
-<body>
-  <header class="header">
-    <div class="header__page container">
-      <svg class="header__logo">
-        <use href="./images/icons.svg#icon-logo"></use>
-      </svg>
-      <nav class="header__nav">
-        <ul class="header__list list">
-          <li class="header__item">
-            <a class="header__link link" href="./index.html">Home</a>
-          </li>
-          <li class="header__item link">
-            <a class="header__link link" href="./index.html">How it’s made?</a>
-          </li>
-          <li class="header__item link">
-            <a class="header__link link" href="./index.html">Our products</a>
-          </li>
-          <li class="header__item link">
-            <a class="header__link link" href="./index.html">Contact</a>
-          </li>
+      <div class="container">
+        <p class="hero__motto">ice cream made with passion</p>
+        <ul class="hero__product-list list">
+          <li><button class="hero__product_button" type="button">Product</button></li>
+          <li><button class="hero__product-question" type="button">How it’s made?</button></li>
         </ul>
-        <button data-modal-open class="header__button" type="button">
-          Buy now
-          <svg class="header__arrow">
-            <use href="./images/icons.svg#icon-arrow-menu"></use>
-          </svg>
-        </button>
-      </nav>
-    </div>
+        <img src="./images/many-ice-cream-left-bottom.jpg" alt="розробка застосунків" />/>
 
-    <div class="container">
-      <p class="hero__motto">ice cream made with passion</p>
-      <ul>
-        <li><a class="link" href="./index.html">Products</a></li>
-        <li><a class="link" href="./index.html">How it’s made?</a></li>
-      </ul>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-        ut labore et
-      </p>
-    </div>
-  </header>
-
-  <main>
-    <section class="hero section">
-      <div class="hero__title-block">
-        <p class="hero__pretitle">
-          100% natural
+        <p class="hero__text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+          ut labore et
         </p>
-        <h2 class="hero__title">
-          products
-        </h2>
       </div>
-      <div>
-        <ul class="hero__list list">
-          <li class="hero__block">
-            <div class="hero__block-background">
-              <div class="hero__block-circle-photo">
-                <img src="./images/ice-cream.png" alt="ice-cream" />
-              </div>
-              <div class="hero__block-circle" id="ice-cream-circle"></div>
-              <div class="hero__block-rectangle" id="ice-cream-rectangle">
-                <h3 class="hero__item-title">
-                  ice cream
-                </h3>
-                <p class="hero__item-description">
-                  Soft ice cream with a delicate taste. Made with milk, cream, sugar and natural stabilizer
-                </p>
-                <svg class="hero__arrow">
-                  <use href="./images/icons.svg#icon-arrow-black"></use>
-                </svg>
-              </div>
-            </div>
-          </li>
-          <li class="hero__block">
-            <div class="hero__block-background">
-              <div class="hero__block-circle-photo">
-                <img src="./images/ice-coffee.png" alt="розробка застосунків" />
-              </div>
-              <div class="hero__block-circle" id="ice-coffee-circle"></div>
-              <div class="hero__block-rectangle" id="ice-coffee-rectangle">
-                <h3 class="hero__item-title">
-                  ice coffee
-                </h3>
-                <p class="hero__item-description">
-                  Fragrant invigorating drink created from 100% natural ingredients without the use of preservatives and
-                  flavor enhancers
-                </p>
-                <svg class="hero__arrow">
-                  <use href="./images/icons.svg#icon-arrow-black"></use>
-                </svg>
-              </div>
-            </div>
-          <li class="hero__block">
-            <div class="hero__block-background">
-              <div class="hero__block-circle-photo">
-                <img src="./images/milkshakes.png" alt="розробка застосунків" />
-              </div>
-              <div class="hero__block-circle" id="milkshakes-circle"></div>
-              <div class="hero__block-rectangle" id="milkshakes-rectangle">
-                <h3 class="hero__item-title">
-                  milkshakes
-                </h3>
-                <p class="hero__item-description">
-                  Sweet drinks based on milk and ice cream, supplemented with syrups, fruits, berries and other sweets
-                  of
-                  your choice
-                </p>
-                <svg class="hero__arrow">
-                  <use href="./images/icons.svg#icon-arrow-black"></use>
-                </svg>
-              </div>
-            </div>
-          </li>
-        </ul>
-      </div>
+    </header>
 
-    </section>
-  </main>
-  <footer></footer>
-  <div data-modal class="modal is-hidden">
-    <div class="modal__window">
-      <div class="modal__close">
-        <button data-modal-close type="button" class="modal__btn-close">
-          <svg class="modal__icon">
-            <use href="./images/icons.svg#icon-close"></use>
-          </svg>
-        </button>
-      </div>
-      <p class="modal__heading">Залиште свої дані, ми вам передзвонимо</p>
-      <form action="">
-        <div class="modal__input-group">
-          <label for="name">Імʼя</label>
-          <div class="modal__input-wrapper">
-            <input type="text" class="modal__input" name="name" id="name" required />
-            <svg class="modal__input-icon" width="18" height="18">
-              <use href="./images/icons.svg#icon-person"></use>
+    <main>
+      <section class="hero section">
+        <div class="hero__title-block">
+          <p class="hero__pretitle">100% natural</p>
+          <h2 class="hero__title">products</h2>
+        </div>
+        <div>
+          <ul class="hero__list list">
+            <li class="hero__block">
+              <div class="hero__block-background">
+                <div class="hero__block-circle-photo">
+                  <img src="./images/ice-cream.png" alt="ice-cream" />
+                </div>
+                <div class="hero__block-circle" id="ice-cream-circle"></div>
+                <div class="hero__block-rectangle" id="ice-cream-rectangle">
+                  <h3 class="hero__item-title">ice cream</h3>
+                  <p class="hero__item-description">
+                    Soft ice cream with a delicate taste. Made with milk, cream, sugar and natural
+                    stabilizer
+                  </p>
+                  <svg class="hero__arrow">
+                    <use href="./images/icons.svg#icon-arrow-black"></use>
+                  </svg>
+                </div>
+              </div>
+            </li>
+            <li class="hero__block">
+              <div class="hero__block-background">
+                <div class="hero__block-circle-photo">
+                  <img src="./images/ice-coffee.png" alt="розробка застосунків" />
+                </div>
+                <div class="hero__block-circle" id="ice-coffee-circle"></div>
+                <div class="hero__block-rectangle" id="ice-coffee-rectangle">
+                  <h3 class="hero__item-title">ice coffee</h3>
+                  <p class="hero__item-description">
+                    Fragrant invigorating drink created from 100% natural ingredients without the
+                    use of preservatives and flavor enhancers
+                  </p>
+                  <svg class="hero__arrow">
+                    <use href="./images/icons.svg#icon-arrow-black"></use>
+                  </svg>
+                </div>
+              </div>
+            </li>
+
+            <li class="hero__block">
+              <div class="hero__block-background">
+                <div class="hero__block-circle-photo">
+                  <img src="./images/milkshakes.png" alt="розробка застосунків" />
+                </div>
+                <div class="hero__block-circle" id="milkshakes-circle"></div>
+                <div class="hero__block-rectangle" id="milkshakes-rectangle">
+                  <h3 class="hero__item-title">milkshakes</h3>
+                  <p class="hero__item-description">
+                    Sweet drinks based on milk and ice cream, supplemented with syrups, fruits,
+                    berries and other sweets of your choice
+                  </p>
+                  <svg class="hero__arrow">
+                    <use href="./images/icons.svg#icon-arrow-black"></use>
+                  </svg>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer></footer>
+    <div data-modal class="modal is-hidden">
+      <div class="modal__window">
+        <div class="modal__close">
+          <button data-modal-close type="button" class="modal__btn-close">
+            <svg class="modal__icon">
+              <use href="./images/icons.svg#icon-close"></use>
             </svg>
-          </div>
+          </button>
         </div>
-        <div class="modal__input-group">
-          <label for="tel">Телефон</label>
-          <div class="modal__input-wrapper">
-            <input type="tel" id="tel" class="modal__input" name="tel" required />
-            <svg class="modal__input-icon" width="18" height="18">
-              <use href="./images/icons.svg#icon-phone"></use>
-            </svg>
-          </div>
-        </div>
-        <div class="modal__input-group">
-          <label for="email">Пошта</label>
-          <div class="modal__input-wrapper">
-            <div class="modal__input-wrapper"></div>
-            <input type="email" id="email" name="email" class="modal__input" required />
-            <svg class="modal__input-icon" width="18" height="18">
-              <use href="./images/icons.svg#icon-email"></use>
-            </svg>
-          </div>
-        </div>
-        <div class="modal__input-group modal__input-group_comment">
-          <label for="comment">Коментар</label>
-          <div class="modal__input-wrapper"></div>
-          <textarea name="comment" id="comment" class="modal__text" placeholder="Введіть текст"></textarea>
-        </div>
-        <div class="modal__input-group-footer">
-          <input type="checkbox" name="politic" id="politic" class="modal__politic-check visually-hidden" />
-          <label for="politic" class="modal__politic-label">
-            <span class="modal__icon-check">
-              <svg width="11" height="8">
-                <use href="./images/icons.svg#icon-check"></use>
+
+        <p class="modal__heading">Залиште свої дані, ми вам передзвонимо</p>
+        <form action="">
+          <div class="modal__input-group">
+            <label for="name">Імʼя</label>
+            <div class="modal__input-wrapper">
+              <input type="text" class="modal__input" name="name" id="name" required />
+              <svg class="modal__input-icon" width="18" height="18">
+                <use href="./images/icons.svg#icon-person"></use>
               </svg>
-            </span>
-            Погоджуюся з розсилкою та приймаю <a class="modal__link" href="">Умови договору</a>
-          </label>
-        </div>
-        <button type="submit" class="btn btn_padding-modal">Відправити</button>
-      </form>
+            </div>
+          </div>
+          <div class="modal__input-group">
+            <label for="tel">Телефон</label>
+            <div class="modal__input-wrapper">
+              <input type="tel" id="tel" class="modal__input" name="tel" required />
+              <svg class="modal__input-icon" width="18" height="18">
+                <use href="./images/icons.svg#icon-phone"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="modal__input-group">
+            <label for="email">Пошта</label>
+            <div class="modal__input-wrapper">
+              <div class="modal__input-wrapper"></div>
+              <input type="email" id="email" name="email" class="modal__input" required />
+              <svg class="modal__input-icon" width="18" height="18">
+                <use href="./images/icons.svg#icon-email"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="modal__input-group modal__input-group_comment">
+            <label for="comment">Коментар</label>
+            <div class="modal__input-wrapper"></div>
+            <textarea
+              name="comment"
+              id="comment"
+              class="modal__text"
+              placeholder="Введіть текст"
+            ></textarea>
+          </div>
+          <div class="modal__input-group-footer">
+            <input
+              type="checkbox"
+              name="politic"
+              id="politic"
+              class="modal__politic-check visually-hidden"
+            />
+            <label for="politic" class="modal__politic-label">
+              <span class="modal__icon-check">
+                <svg width="11" height="8">
+                  <use href="./images/icons.svg#icon-check"></use>
+                </svg>
+              </span>
+              Погоджуюся з розсилкою та приймаю <a class="modal__link" href="">Умови договору</a>
+            </label>
+          </div>
+          <button type="submit" class="btn btn_padding-modal">Відправити</button>
+        </form>
+      </div>
     </div>
-  </div>
-  <script src="./js/modal.js"></script>
-</body>
-
+    <script src="./js/modal.js"></script>
+  </body>
 </html>
